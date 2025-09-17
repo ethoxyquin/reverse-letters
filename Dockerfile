@@ -13,4 +13,4 @@ COPY . .
 
 RUN composer install --no-interaction --prefer-dist
 
-CMD ["sh", "-c", "./vendor/bin/phpunit --testdox --colors=always app"]
+CMD ["./vendor/bin/phpunit", "--testdox", "--colors=always", "app"]
